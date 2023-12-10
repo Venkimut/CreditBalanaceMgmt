@@ -201,11 +201,11 @@ class PrettyPageHandler extends Handler
 
         $templateFile = $this->getResource("views/layout.html.php");
         $cssFile      = $this->getResource("css/whoops.base.css");
-        $zeptoFile    = $this->getResource("js/zepto.min.js");
-        $prismJs = $this->getResource("js/prism.js");
+        $zeptoFile    = $this->getResource("/application/js/zepto.min.js");
+        $prismJs = $this->getResource("/application/js/prism.js");
         $prismCss = $this->getResource("css/prism.css");
-        $clipboard    = $this->getResource("js/clipboard.min.js");
-        $jsFile       = $this->getResource("js/whoops.base.js");
+        $clipboard    = $this->getResource("/application/js/clipboard.min.js");
+        $jsFile       = $this->getResource("/application/js/whoops.base.js");
 
         if ($this->customCss) {
             $customCssFile = $this->getResource($this->customCss);
